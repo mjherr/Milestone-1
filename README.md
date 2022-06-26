@@ -26,3 +26,5 @@ Outcome - there may be 3 X's or O's in a row. If this is the case, the game is o
 Round 5: Only Player 1 will be able to play.
 Outcome - Player 1 or Player 2 wins.
 Outcome #2 - The game is tied.
+
+Create a function that can check for victory!
