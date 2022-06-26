@@ -1,3 +1,4 @@
+/* Page style */
 body {
     display: flex;
     flex-direction: column;
@@ -9,10 +10,12 @@ h1 {
     color: #FFC914;
 }
 
+/* Game Board */
 .grid-container {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
+    position: relative;
 }
 
 .grid-item {
@@ -23,6 +26,7 @@ h1 {
     align-items: center;
 }
 
+/* Grid borders */
 .right-border{
     border-right: 0.5em solid #525B76;
 }
@@ -31,6 +35,7 @@ h1 {
     border-bottom: 0.5em solid #525B76;
 }
 
+/* Winning strikethrough */
 .strike{
     position: absolute;
     background-color: #F88DAD;
@@ -39,4 +44,5 @@ h1 {
 .strike-row1{
     width: 100%;
     height: 5px;
+    top: 14%;
 }
