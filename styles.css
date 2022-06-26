@@ -30,3 +30,13 @@ h1 {
 .bottom-border{
     border-bottom: 0.5em solid #525B76;
 }
+
+.strike{
+    position: absolute;
+    background-color: #F88DAD;
+}
+
+.strike-row1{
+    width: 100%;
+    height: 5px;
+}
