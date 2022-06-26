@@ -81,12 +81,40 @@ h1 {
     width: 100%;
     height: 5px;
     top: 50%;
-    transform: rotate(45deg);
+    transform: skewY(45deg);
 }
 
-.strike-diagonal1{
+.strike-diagonal2{
     width: 100%;
     height: 5px;
     top: 45%;
-    transform: rotate(-45deg);
+    transform: skewY(-45deg);
+}
+
+/* Score Area */
+
+#score-area {
+    
+    text-align: center;
+    border: #F45283 5px solid;
+    padding: 25px;
+}
+h2 {
+    font-size: 3em;
+    color: #FFC914;
+}
+.hidden{
+    display: none;
+}
+
+.visible{
+    display:block;
+}
+
+button{
+    background-color: transparent;
+    color:#525B76;
+    border: #525B76 solid;
+    font-size: 2em;
+    padding: 20px;
 }
