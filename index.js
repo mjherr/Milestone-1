@@ -20,7 +20,7 @@ const playAgain = document.getElementById("play-again");
 box.forEach((boxes) => boxes.addEventListener ("click", boxClick));
 
 function boxClick(event) {
-    if (scoreArea.classList.contains('visible')) {
+    if (scoreArea.classList.contains("visible")) {
         return;
     }
     const boxes = event.target;
@@ -28,5 +28,9 @@ function boxClick(event) {
     if (boxes.innerText != ""){
         return;
     }
-    if (turn)
+    if (turn === PlayerX) {
+        boxes.innerText = PlayerX;
+        victoryCheck[boxNumber = 1] = PlayerX;
+        turn = PlayerO;
+    }
 }
