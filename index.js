@@ -1,9 +1,9 @@
 // variables
 
-const space = document.querySelectorAll(".grid-container");
-const PlayerX = 'X';
-const PlayerO = 'O';
-const turn = PlayerX;
+const space = document.querySelectorAll(".boxes");
+const PlayerX = "X";
+const PlayerO = "O";
+let turn = PlayerX;
 
 const victoryCheck = Array(space.length);
 victoryCheck.fill(null);
@@ -15,22 +15,22 @@ const scoreArea = document.getElementById("score-area");
 const gameOver = document.getElementById("endgame-text");
 const playAgain = document.getElementById("play-again");
 
-//clicks functions
+//click functions
 
-box.forEach((boxes) => boxes.addEventListener ("click", boxClick));
+space.forEach((boxes) => boxes.addEventListener("click", boxClick));
 
 function boxClick(event) {
     if (scoreArea.classList.contains("visible")) {
         return;
     }
-    const boxes = event.target;
-    const boxNumber = boxes.dataset.index;
-    if (boxes.innerText != ""){
+    const box = event.target;
+    const boxNumber = box.dataset.index;
+    if (box.innerText != ""){
         return;
     }
     if (turn === PlayerX) {
-        boxes.innerText = PlayerX;
-        victoryCheck[boxNumber = 1] = PlayerX;
+        box.innerText = PlayerX;
+        victoryCheck[boxNumber - 1] = PlayerX;
         turn = PlayerO;
     }
 }
