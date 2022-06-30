@@ -33,4 +33,9 @@ function boxClick(event) {
         victoryCheck[boxNumber - 1] = PlayerX;
         turn = PlayerO;
     }
+    else {
+        box.innerText = PlayerO;
+        victoryCheck[boxNumber - 1] = PlayerO;
+        turn = PlayerX;
+    }
 }
