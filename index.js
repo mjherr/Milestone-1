@@ -38,12 +38,18 @@ function boxClick(event) {
         victoryCheck[boxNumber - 1] = PlayerO;
         turn = PlayerX;
     }
-
+    checkWinner();
 }
 
-//winning rows
+function checkWinner() {
+    for (const winningCombo of winningCombos) {
+        console.log(winningCombo);
+    }
+}
+//winning lines
 
 const winningCombos = [
+    //rows
     {combo: [1, 2, 3], strike: "strike-row-1"},
     {combo: [4, 5, 6], strike: "strike-row-2"},
     {combo: [7, 8, 9], strike: "strike-row-3"},
