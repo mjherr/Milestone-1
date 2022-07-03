@@ -116,19 +116,9 @@ h2 {
 }
 
 button{
-    background-color: transparent;
+    background-color: #F6F1D1;
     color:#525B76;
-    border: #525B76 solid;
+    border: #525B76 3px solid;
     font-size: 2em;
     padding: 20px;
 }
-
-/* hovering */
-
-/* .x-hover:hover::after{
-    content:"X";
-}
-
-.o-hover:hover::after{
-    content:"O";
-} */

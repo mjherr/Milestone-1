@@ -45,9 +45,7 @@ function boxClick(event) {
 
 function checkForVictory() {
     for (const winningCombo of winningCombos) {
-        // console.log(winningCombo);
         const {combo, strikes} = winningCombo;
-
         const boxValue1 = victoryCheck[combo[0] - 1];
         const boxValue2 = victoryCheck[combo[1] - 1];
         const boxValue3 = victoryCheck[combo[2] - 1];
@@ -58,10 +56,31 @@ function checkForVictory() {
             boxValue1 === boxValue3
         ) {
             strike.classList.add(strikes);
-            
+            scoreAreaBox(boxValue1);
+            return;
         }
+     }
     }
+
+//in case of a draw
+
+const allBoxesFilled = victoryCheck.every((box) => box !== null);
+if (allBoxesFilled) {
+    gameOverText(null);
 }
+
+//score box area
+
+function scoreAreaBox(gameOverText){
+    let text = 'Draw';
+    if(gameOverText != null) {
+        text = `Winner is ${gameOverText}`;
+    }
+    scoreArea.className = "visible";
+    gameOver.innerText = text;
+}
+
+
 
 //winning lines
 
