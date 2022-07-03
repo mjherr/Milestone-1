@@ -41,6 +41,7 @@ function boxClick(event) {
     }
     checkForVictory();
 }
+//victory check function ... still in progress
 
 function checkForVictory() {
     for (const winningCombo of winningCombos) {
@@ -56,6 +57,7 @@ function checkForVictory() {
             boxValue1 === boxValue3
         ) {
             strike.classList.add(strikes);
+            
         }
     }
 }

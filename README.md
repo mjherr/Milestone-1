@@ -1,5 +1,7 @@
-# Milestone-1
-Tic-Tac-Toe
+# Milestone-1 Tic Tac Toe Game
+
+## Deployed Game
+[PLAYNOW] (https://mjherr.github.io/Milestone-1-Tic-Tac-Toe-Game/)
 
 To start playing, each player will type their name in the Player 1 or Player 2 box.
 
