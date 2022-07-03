@@ -45,6 +45,7 @@ function boxClick(event) {
 
 function checkForVictory() {
     for (const winningCombo of winningCombos) {
+        // console.log(winningCombo);
         const {combo, strikes} = winningCombo;
 
         const boxValue1 = victoryCheck[combo[0] - 1];
@@ -66,15 +67,15 @@ function checkForVictory() {
 
 const winningCombos = [
     //winning rows
-    {combo: [1, 2, 3], strikes: "strike-row-1"},
-    {combo: [4, 5, 6], strikes: "strike-row-2"},
-    {combo: [7, 8, 9], strikes: "strike-row-3"},
+    {combo: [1, 2, 3], strikes: "strike-row1"},
+    {combo: [4, 5, 6], strikes: "strike-row2"},
+    {combo: [7, 8, 9], strikes: "strike-row3"},
     //winning columns
-    {combo: [1, 4, 7], strikes: "strike-column-1"},
-    {combo: [2, 5, 8], strikes: "strike-column-2"},
-    {combo: [3, 6, 9], strikes: "strike-column-3"},
+    {combo: [1, 4, 7], strikes: "strike-column1"},
+    {combo: [2, 5, 8], strikes: "strike-column2"},
+    {combo: [3, 6, 9], strikes: "strike-column3"},
     //winning diagonals
     {combo: [1, 5, 9], strikes: "strike-diagonal1"},
     {combo: [3, 5, 7], strikes: "strike-diagonal2"},
     
-]
+];
