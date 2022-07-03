@@ -64,15 +64,15 @@ function checkForVictory() {
 
 //in case of a draw
 
-const allBoxesFilled = victoryCheck.every((box) => box !== null);
+const allBoxesFilled = victoryCheck.every((boxes)=> boxes !== null);
 if (allBoxesFilled) {
-    gameOverText(null);
+    scoreAreaBox(null);
 }
 
 //score box area
 
 function scoreAreaBox(gameOverText){
-    let text = 'Draw';
+    let text = 'Draw!';
     if(gameOverText != null) {
         text = `Winner is ${gameOverText}`;
     }
