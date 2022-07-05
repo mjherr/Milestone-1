@@ -41,7 +41,7 @@ function boxClick(event) {
     }
     checkForVictory();
 }
-//victory check function ... still in progress
+//victory check function
 
 function checkForVictory() {
     for (const winningCombo of winningCombos) {
@@ -79,8 +79,6 @@ function scoreAreaBox(gameOverText){
     scoreArea.className = "visible";
     gameOver.innerText = text;
 }
-
-
 
 //winning lines
 

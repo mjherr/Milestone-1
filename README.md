@@ -24,4 +24,4 @@ Round 5: Only Player 1 will be able to play.
 Outcome - Player 1 or Player 2 wins.
 Outcome #2 - The game is tied.
 
-Click Play Again for another round!
+Draw function and restart button is still being worked on.
