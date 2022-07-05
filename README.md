@@ -3,21 +3,16 @@
 ## Deployed Game
 [PLAYNOW](https://mjherr.github.io/Milestone-1-Tic-Tac-Toe-Game/)
 
-To start playing, each player will type their name in the Player 1 or Player 2 box.
+The starting player will always be X.
 
 On a 3x3 grid, each player will take turns selecting the square their shape will fill.
 
 The objective of the game is to get 3 X's or O's, in a row, vertically, horizontally or diagonally.
 
-Winner scores 10 points.
-
-Game ends once a player earns 10 points. 
-
-Game will keep score of each win.
+The first person to get 3 X's or 3 O's will win.
 
 Pseudocode:
-Round 1: Player 1 and Player 2 type their names in name boxes.
-Player 1 places X first. Player 2 places O next.
+Round 1: Player 1 places X first. Player 2 places O next.
 Since there are not 3 X's or O's in a row, the game has not ended.
 Round 2: Player 1 and 2 place their letters.
 Again, there are not 3 X's or O's in a row, the game has not ended.
@@ -29,4 +24,4 @@ Round 5: Only Player 1 will be able to play.
 Outcome - Player 1 or Player 2 wins.
 Outcome #2 - The game is tied.
 
-Create a function that can check for victory!
+Click Play Again for another round!

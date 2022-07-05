@@ -74,7 +74,7 @@ if (allBoxesFilled) {
 function scoreAreaBox(gameOverText){
     let text = 'Draw!';
     if(gameOverText != null) {
-        text = `Winner is ${gameOverText}`;
+        text = `Winner is ${gameOverText}!`;
     }
     scoreArea.className = "visible";
     gameOver.innerText = text;
